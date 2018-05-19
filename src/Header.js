@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import dappnodeLogo from './dappnode-logo.png'
 
 class Header extends Component {
   render() {
@@ -7,6 +8,7 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <span className="navbar-brand">
+              <img src={dappnodeLogo} className="navbar-logo" />
               <span className="header-brand">DAppNode </span>
               <span className="header-vertical-bar"></span>
               <span className="header-sub-brand dappnode-color">Connection Setup</span>

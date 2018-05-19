@@ -22,7 +22,7 @@ ol li {
   background-color: #218a82;
 }
 .header-brand {
-  color: #f2f2f2
+  color: #e2e2e4
 }
 .header-vertical-bar {
   margin: 5px;
@@ -31,6 +31,14 @@ ol li {
 .header-sub-brand {
   text-transform: uppercase;
   font-size: 78%
+}
+
+.navbar-logo {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  top: -2px;
+  margin-right: 12px;
 }
 
 .nav-icon {
@@ -44,6 +52,10 @@ a {
 }
 a:hover {
   color: #1c7973
+}
+
+.jumbotron {
+  background-color: #e9ecef8c;
 }
 
 input, button {
