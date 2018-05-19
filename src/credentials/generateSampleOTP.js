@@ -1,4 +1,4 @@
-import base64url from 'base64url';
+import base64url from 'urlsafe-base64';
 
 window.generateSampleOTP = function() {
 
@@ -10,7 +10,7 @@ window.generateSampleOTP = function() {
   "psk": "TI3LjRandomPSK" };
 
   var decodedOTP = JSON.stringify(test);
-  var otpEncoded = base64url.encode(decodedOTP);
+  var otpEncoded = base64url.encode(Buffer.from(decodedOTP, 'utf8'));
   console.log(window.location)
   var url = window.location.origin + '/#otp=' + otpEncoded;
   console.log(url)

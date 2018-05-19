@@ -1,4 +1,4 @@
-import base64url from 'base64url';
+import base64url from 'urlsafe-base64';
 import { Base64 } from 'js-base64';
 import getJsonFromUrl from './getJsonFromUrl';
 import './generateSampleOTP'
