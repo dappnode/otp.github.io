@@ -1,0 +1,72 @@
+/* Global */
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+ol {
+  margin-left: -0.8em;
+}
+ol li {
+  list-style-type: decimal-leading-zero;
+}
+
+.dappnode-color {
+  color: #2FBCB2;
+}
+.dappnode-background-color {
+  border: #2FBCB2;
+  background-color: #2FBCB2;
+}
+.dappnode-background-color:hover {
+  border: #218a82;
+  background-color: #218a82;
+}
+.header-brand {
+  color: #f2f2f2
+}
+.header-vertical-bar {
+  margin: 5px;
+  color: #404040
+}
+.header-sub-brand {
+  text-transform: uppercase;
+  font-size: 78%
+}
+
+.nav-icon {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+
+a {
+  color: #1c7973
+}
+a:hover {
+  color: #1c7973
+}
+
+input, button {
+  padding: 7px;
+  vertical-align: top;
+}
+.input-group {
+  margin: 2px;
+}
+input {
+  font-family: Consolas, monaco, monospace;
+}
+.in-text-copy {
+  font-family: Consolas, monaco, monospace;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  padding: 2px;
+}
+/* General button sizes */
+
+
+
+.container{
+  max-width: 800px;
+}
