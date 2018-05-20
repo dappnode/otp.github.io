@@ -61,7 +61,7 @@ export default class App extends Component {
   render() {
     const routes = options.map((option, i) => {
       return (
-        <Route key={i} path={'/'+option.route} component={option.component}/>
+        <Route key={i} path={process.env.PUBLIC_URL + '/' + option.route} component={option.component}/>
       )
     })
     // <item.icon />
@@ -70,7 +70,7 @@ export default class App extends Component {
         <li key={i} className="nav-item">
           <Link
             className="nav-link"
-            to={{ pathname: '/'+option.route, hash: window.location.hash}}
+            to={{ pathname: option.route, hash: window.location.hash}}
 
             query={this.props.query}
             >
@@ -103,7 +103,9 @@ export default class App extends Component {
     } else {
       return (
         <div className="container">
-          <WrongOTP />
+          <div className="row">
+            <WrongOTP />
+          </div>
         </div>
       )
     }

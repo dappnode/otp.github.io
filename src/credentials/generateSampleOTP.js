@@ -12,7 +12,7 @@ window.generateSampleOTP = function() {
   var decodedOTP = JSON.stringify(test);
   var otpEncoded = base64url.encode(Buffer.from(decodedOTP, 'utf8'));
   console.log(window.location)
-  var url = window.location.origin + '/#otp=' + otpEncoded;
+  var url = window.location.origin + process.env.PUBLIC_URL + '/#otp=' + otpEncoded;
   console.log(url)
 
 }
