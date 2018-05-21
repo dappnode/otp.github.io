@@ -6,8 +6,8 @@ export default () => (
   <Route path="/" render={(props) => <Redirector {...props} />} />
 )
 
-
 class Redirector extends Component {
+
   componentWillMount() {
     const platform = guessUserPlatform()
     if (platform) {
@@ -16,20 +16,28 @@ class Redirector extends Component {
       this.props.history.push('credentials'+this.props.location.hash)
     }
   }
+
   render() {return null}
+  
 }
 
 
 function guessUserPlatform() {
 
-  const ua = parser(navigator.userAgent)
+  // UA reference: https://deviceatlas.com/blog/list-of-user-agent-strings
+  // More extensive UA reference https://developers.whatismybrowser.com/useragents/explore/
 
-  if (ua.os.name.includes('Mac OS')) {
-    return 'macos';
-  } else if (ua.os.name.includes('Android')) {
+  const ua = parser(navigator.userAgent)
+  const osName = ua.os.name.toLowerCase()
+
+  if (osName.includes('android')) {
     return 'android';
-  } else if (ua.os.name.includes('iPhone')) {
+  } else if (osName.includes('ios') || osName.includes('iphone')) {
     return 'ios';
+  } else if (osName.includes('mac os') || osName.includes('macos')) {
+    return 'macos';
+  } else if (osName.includes('windows')) {
+    return 'windows';
   }
 
 }
