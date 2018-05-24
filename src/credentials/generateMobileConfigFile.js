@@ -38,7 +38,7 @@ function templateMobileConfig(credentials) {
   			<key>IPv4</key>
   			<dict>
   				<key>OverridePrimary</key>
-  				<integer>1</integer>
+  				<integer>0</integer>
   			</dict>
   			<key>PPP</key>
   			<dict>
