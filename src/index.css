@@ -21,6 +21,11 @@ ol li {
   border: #218a82;
   background-color: #218a82;
 }
+.dappnode-background-color:active {
+  border: #218a82;
+  background-color: #218a82;
+}
+
 .header-brand {
   color: #e2e2e4
 }

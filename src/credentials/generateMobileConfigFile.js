@@ -1,4 +1,4 @@
-import FileSaver from 'file-saver';
+// import FileSaver from 'file-saver';
 
 
 export default function(credentials) {

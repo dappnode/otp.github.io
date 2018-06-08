@@ -11,7 +11,6 @@ import Windows from './Instructions/Windows';
 import Android from './Instructions/Android';
 import iOS from './Instructions/iOS';
 import Chromebook from './Instructions/Chromebook';
-import Others from './Instructions/Others';
 // Dedicated functions
 import getCredentials from './credentials/getCredentials'
 // Icons

@@ -8,7 +8,7 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <span className="navbar-brand">
-              <img src={dappnodeLogo} className="navbar-logo" />
+              <img src={dappnodeLogo} className="navbar-logo" alt="DAppNode logo"/>
               <span className="header-brand">DAppNode </span>
               <span className="header-vertical-bar"></span>
               <span className="header-sub-brand dappnode-color">Connection Setup</span>

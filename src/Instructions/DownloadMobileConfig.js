@@ -6,7 +6,7 @@ export default class DownloadMobileConfig extends Component {
   render() {
     const credentials = getCredentials()
     const file_text = generateMobileConfigFile(credentials)
-    const fileName = credentials.name || 'DAppNode'
+    // const fileName = credentials.name || 'DAppNode'
     const href = 'data:application/x-apple-aspen-config; Charset=utf-8,' + encodeURIComponent(file_text)
     return (
       <div className="lead">
