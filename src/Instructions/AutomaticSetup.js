@@ -13,7 +13,7 @@ export default class AutomaticSetup extends Component {
     return (
       <div className="jumbotron">
         <h1 className="display-4">Automatic setup for {this.props.platform}</h1>
-        <p className="lead">Download a .mobileconfig, which automatically configures a VPN connection to your DAppNode</p>
+        <p className="lead">Download a .mobileconfig, to automatically configure a VPN connection to your DAppNode</p>
         <div data-toggle="modal" data-target="#exampleModal">
           <DownloadMobileConfig />
         </div>

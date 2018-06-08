@@ -60,7 +60,7 @@ export default class App extends Component {
   render() {
     const routes = options.map((option, i) => {
       return (
-        <Route key={i} path={process.env.PUBLIC_URL + '/' + option.route} component={option.component}/>
+        <Route key={i} path={'/' + option.route} component={option.component}/>
       )
     })
     // <item.icon />
