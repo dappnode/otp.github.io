@@ -83,6 +83,9 @@ input {
   max-width: 800px;
 }
 
+.modal-image {
+  width: 100%;
+}
 
 /* YOUTUBE VIDEO EMBED */
 
