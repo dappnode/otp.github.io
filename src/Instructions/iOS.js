@@ -23,7 +23,7 @@ export default class iOS extends Component {
           </li><li>Tap <strong>Account</strong> and enter <Credential tag={'user'}/>
           </li><li>Tap <strong>Password</strong> and enter <Credential tag={'pass'}/>
           </li><li>Tap <strong>Secret</strong> and enter <Credential tag={'psk'}/>
-          </li><li>Make sure the <strong>Send All Traffic</strong> switch is ON.
+          </li><li>Make sure the <strong>Send All Traffic</strong> switch is OFF.
           </li><li>Tap <strong>Done</strong>.
           </li><li>Slide the <strong>VPN</strong> switch ON.
           </li>
