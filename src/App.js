@@ -10,6 +10,7 @@ import MacOS from "./Instructions/MacOS";
 import Windows from "./Instructions/Windows";
 import Android from "./Instructions/Android";
 import iOS from "./Instructions/iOS";
+import Linux from "./Instructions/Linux";
 import Chromebook from "./Instructions/Chromebook";
 // Dedicated functions
 import getCredentials from "./credentials/getCredentials";
@@ -19,6 +20,7 @@ import {
   FaApple,
   FaMobile,
   FaAndroid,
+  FaLinux,
   FaChrome,
   FaWrench
 } from "react-icons/lib/fa";
@@ -47,6 +49,12 @@ const options = [
     route: "android",
     component: Android,
     icon: FaAndroid
+  },
+  {
+    name: "Linux",
+    route: "linux",
+    component: Linux,
+    icon: FaLinux
   },
   {
     name: "Chromebook",
