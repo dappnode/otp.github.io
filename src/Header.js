@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import dappnodeLogo from './dappnode-logo.png'
+import React, { Component } from "react";
+import dappnodeLogo from "./dappnode-logo.png";
 
 class Header extends Component {
   render() {
@@ -8,13 +8,27 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <span className="navbar-brand">
-              <img src={dappnodeLogo} className="navbar-logo" alt="DAppNode logo"/>
+              <img
+                src={dappnodeLogo}
+                className="navbar-logo"
+                alt="DAppNode logo"
+              />
               <span className="header-brand">DAppNode </span>
-              <span className="header-vertical-bar"></span>
-              <span className="header-sub-brand dappnode-color">Connection Setup</span>
+              <span className="header-vertical-bar" />
+              <span className="header-sub-brand dappnode-color">
+                Connection Setup
+              </span>
             </span>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" />
             </button>
           </div>
         </div>

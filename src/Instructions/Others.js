@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Others extends Component {
   render() {
@@ -6,12 +6,11 @@ export default class Others extends Component {
     return (
       <div>
         <h4>Others</h4>
-        <hr className="my-4"/>
-        <ol className='ListInstructions'>
-          <li>Please, connect with us to request support for your device
-          </li>
+        <hr className="my-4" />
+        <ol className="ListInstructions">
+          <li>Please, connect with us to request support for your device</li>
         </ol>
-        <hr className="my-4"/>
+        <hr className="my-4" />
       </div>
     );
   }

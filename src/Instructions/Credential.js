@@ -1,16 +1,12 @@
-import React, { Component } from 'react';
-import getCredentials from '../credentials/getCredentials'
+import React, { Component } from "react";
+import getCredentials from "../credentials/getCredentials";
 
 export default class Credential extends Component {
   render() {
-    const credentials = getCredentials()
-    const tag = this.props.tag
-    const value = credentials[tag]
-    return (
-      <span className="in-text-copy">
-        {value}
-      </span>
-    )
+    const credentials = getCredentials();
+    const tag = this.props.tag;
+    const value = credentials[tag];
+    return <span className="in-text-copy">{value}</span>;
   }
 }
 
