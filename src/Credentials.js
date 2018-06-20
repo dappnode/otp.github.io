@@ -8,7 +8,7 @@ export default class Home extends Component {
       { name: "VPN type", tag: "VPNType" },
       { name: "Server IP", tag: "server" },
       { name: "PSK", tag: "psk" },
-      { name: "User", tag: "server" },
+      { name: "User", tag: "user" },
       { name: "Password", tag: "pass" }
     ];
     const rows = selectedTagsToShow.map((credential, i) => {
