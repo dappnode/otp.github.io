@@ -39,6 +39,11 @@ export default class Android extends Component {
             <strong>IPSec pre-shared key</strong> field.
           </li>
           <li>
+            Click <strong>Show advanced options</strong> and enter{" "}
+            <span className="in-text-copy">172.33.0.0/16</span> in the{" "}
+            <strong>Forwarding routes</strong> field.
+          </li>
+          <li>
             Tap <strong>Save</strong>.
           </li>
           <li>Tap the new VPN connection.</li>
