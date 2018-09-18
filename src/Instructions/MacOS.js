@@ -56,12 +56,12 @@ export default class MacOS extends Component {
           </li>
           <li>
             Make sure the checkbox{" "}
-            <strong>"Show VPN status in menu bar"</strong> is NOT checked.
+            <strong>"Show VPN status in menu bar"</strong> is checked.
           </li>
           <li>
             Click the <strong>Advanced</strong> button and make sure the{" "}
             <strong>Send all traffic over VPN connection</strong> checkbox is
-            checked.
+            NOT checked.
           </li>
           <li>
             Click the <strong>TCP/IP</strong> tab, and make sure{" "}
