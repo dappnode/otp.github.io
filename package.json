@@ -1,6 +1,6 @@
 {
   "name": "dappnode_otp",
-  "homepage": "http://dappnode.github.io/DAppNode_OTP",
+  "homepage": "https://dappnode.github.io/DAppNode_OTP",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
