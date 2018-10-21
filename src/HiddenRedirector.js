@@ -36,5 +36,7 @@ function guessUserPlatform() {
     return "macos";
   } else if (osName.includes("windows")) {
     return "windows";
+  } else if (osName.includes("linux")) {
+    return "linux";
   }
 }
