@@ -6,7 +6,7 @@ export default class Home extends Component {
     const credentials = getCredentials();
     const selectedTagsToShow = [
       { name: "VPN type", tag: "VPNType" },
-      { name: "Server IP", tag: "server" },
+      { name: "Server Address", tag: "server" },
       { name: "PSK", tag: "psk" },
       { name: "User", tag: "user" },
       { name: "Password", tag: "pass" }
