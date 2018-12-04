@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Credential from "./Credential";
 import getCredentials from "../credentials/getCredentials";
+import AutomaticSetupLinux from "./AutomaticSetupLinux";
 
 const credentials = getCredentials();
 
-export default class MacOS extends Component {
+export default class Linux extends Component {
   render() {
     const configurationFile = `#org.freedesktop.NetworkManager.l2tp
 
@@ -29,6 +30,8 @@ never-default=true`;
 
     return (
       <div>
+        <AutomaticSetupLinux platform={"Linux"} />
+
         <h4>Linux setup guide</h4>
         <hr className="my-4" />
         <ol className="ListInstructions">
