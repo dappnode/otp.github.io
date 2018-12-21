@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import Credential from "./Credential";
+import VideoInstructions from "./VideoInstructions";
 
 export default class Windows10 extends Component {
   render() {
     // <Credential tag={'server'}/>
     return (
       <div>
+        <VideoInstructions platform={"Windows 10 and 8.x"} />
+
         <h4>Windows 10 and 8.x setup guide</h4>
         <hr className="my-4" />
         <ol className="ListInstructions">
