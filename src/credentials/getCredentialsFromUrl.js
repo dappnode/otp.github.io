@@ -1,17 +1,24 @@
 import base64url from "urlsafe-base64";
-import { Base64 } from "js-base64";
 import getJsonFromUrl from "./getJsonFromUrl";
-import "./generateSampleOTP";
 
 const OTP_VARIABLE_TAG = "otp";
+
+// Old url: https://dappnode.github.io/DAppNode_OTP/#otp=acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234
+// New url: https://dappnode.github.io/otp/#acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234
+// New url (admin): 104.248.150.201&PdJqRTPgxTFXkK8GseP6&&6BzcwMaqTGGsSVTgFx9F&lionDAppnode
+// s=104.192.192.192
+// s=73bf73bf73bf73bf.dyndns.dappnode.io
+// x=PdjqPdjqPdjqPdjqPdjq
+// u=dappnode_admin
+// p=6Bzc6Bzc6Bzc6Bzc6Bzc
+// n=lionDAppnode
 
 export default function() {
   const urlVariables = getJsonFromUrl(true);
 
   // Make sure the link only contains the otp variable
   if (!(OTP_VARIABLE_TAG in urlVariables)) {
-    console.error("incorrect url format, no otp variable found");
-    return;
+    throw Error("incorrect url format, no otp variable found");
   }
   const encodedOTP = urlVariables[OTP_VARIABLE_TAG];
 
@@ -23,11 +30,9 @@ export default function() {
     credentials = JSON.parse(decodedOTP);
   } catch (e) {
     if (e instanceof SyntaxError) {
-      console.error("Syntax Error, invalid otp: ", decodedOTP);
-      return;
+      throw Error("Syntax Error, invalid otp: ", decodedOTP);
     } else {
-      console.error(e);
-      return;
+      throw e;
     }
   }
 
@@ -35,16 +40,31 @@ export default function() {
   const requiredKeys = ["name", "pass", "psk", "server", "user"];
   requiredKeys.forEach(key => {
     if (!(key in credentials)) {
-      console.error("The OTP is missing a required key: ", key, credentials);
-      return;
+      throw Error("The OTP is missing a required key: ", key, credentials);
     }
   });
 
   // Append extra credentials
-  credentials.pskEncoded = Base64.encode(credentials.psk);
   credentials.otp = encodedOTP;
-  credentials.VPNType = "L2TP over IPSec";
 
   // Return the valid credentials object
   return credentials;
 }
+
+// For testing, create a sample OTP
+
+window.generateSampleOTP = () => {
+  const decodedOTP = JSON.stringify({
+    server: "SERVER_IP",
+    name: "SERVER_NAME",
+    user: "VPN_USER",
+    pass: "VPN_PASSWORD",
+    psk: "SERVER_PSK"
+  });
+  const otpEncoded = base64url.encode(Buffer.from(decodedOTP, "utf8"));
+  const url = `${window.location.origin}${
+    process.env.PUBLIC_URL
+  }/#otp=${otpEncoded}`;
+  window.location.replace(url);
+  window.location.reload();
+};
