@@ -9,7 +9,8 @@ export default class Home extends Component {
       { name: "Server Address", tag: "server" },
       { name: "PSK", tag: "psk" },
       { name: "User", tag: "user" },
-      { name: "Password", tag: "pass" }
+      { name: "Password", tag: "pass" },
+      { name: "Server Name", tag: "name" }
     ];
     const rows = selectedTagsToShow.map((credential, i) => {
       return (
