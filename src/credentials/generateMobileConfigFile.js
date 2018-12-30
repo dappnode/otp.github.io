@@ -1,20 +1,16 @@
 // import FileSaver from 'file-saver';
 
-
 export default function(credentials) {
-
   // var credentialTags = generateTagsFromCredentials(credentials, true);
-	var mobileConfigFile = templateMobileConfig(credentials);
+  var mobileConfigFile = templateMobileConfig(credentials);
 
   // var blob = new Blob([mobileConfigFile], {type: "text/plain;charset=utf-8"});
   // window.downloadMobileConfig = function() {
   //   FileSaver.saveAs(blob, "connect_to_your_DAppNode.mobileconfig");
   //   console.log('Downloaded config file')
   // }
-  return mobileConfigFile
-
+  return mobileConfigFile;
 }
-
 
 function templateMobileConfig(credentials) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -87,5 +83,5 @@ function templateMobileConfig(credentials) {
   	<key>PayloadVersion</key>
   	<integer>1</integer>
   </dict>
-  </plist>`
+  </plist>`;
 }

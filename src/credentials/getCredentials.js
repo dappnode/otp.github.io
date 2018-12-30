@@ -5,12 +5,12 @@
 // import errorDisplay from './Modules/errorDisplay';
 // import downloadLink from './Modules/downloadLink';
 // import generateMobileConfigFile from './Modules/generateMobileConfigFile';
-import getCredentialsFromUrl from './getCredentialsFromUrl'
+import getCredentialsFromUrl from "./getCredentialsFromUrl";
 
-const credentials = getCredentialsFromUrl()
+const credentials = getCredentialsFromUrl();
 
 export default function getCredentials() {
-  return credentials
+  return credentials;
 }
 
 // if (credentials) {
