@@ -7,7 +7,10 @@
 // p=6Bzc6Bzc6Bzc6Bzc6Bzc
 // n=lionDAppnode
 
-const isHex = h => parseInt(h, 16).toString(16) === h;
+function isHex(str) {
+  const regexp = new RegExp("^[0-9a-fA-F]+$");
+  return Boolean(regexp.test(str));
+}
 
 export default function() {
   const pos = window.location.href.indexOf("#");
