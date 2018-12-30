@@ -46,9 +46,9 @@ function templateMobileConfig(credentials) {
   				<string>${credentials.server}</string>
   			</dict>
   			<key>PayloadDescription</key>
-  			<string>VPN connection to ${credentials.name} DAppNode VPN</string>
+  			<string>VPN connection to ${credentials.name}</string>
   			<key>PayloadDisplayName</key>
-  			<string>VPN connection to ${credentials.name} DAppNode VPN</string>
+  			<string>VPN connection to ${credentials.name}</string>
   			<key>PayloadIdentifier</key>
   			<string>DAppNode.VPN.${credentials.otp}</string>
   			<key>PayloadType</key>
@@ -65,21 +65,21 @@ function templateMobileConfig(credentials) {
   				<integer>0</integer>
   			</dict>
   			<key>UserDefinedName</key>
-  			<string>${credentials.name} VPN</string>
+  			<string>${credentials.name}</string>
   			<key>VPNType</key>
   			<string>L2TP</string>
   		</dict>
   	</array>
   	<key>PayloadDisplayName</key>
-  	<string>${credentials.name} VPN</string>
+  	<string>${credentials.name}</string>
   	<key>PayloadIdentifier</key>
-  	<string>DAppNode.${credentials.otp}</string>
+  	<string>dappnode.${credentials.otp}</string>
   	<key>PayloadRemovalDisallowed</key>
   	<false/>
   	<key>PayloadType</key>
   	<string>Configuration</string>
   	<key>PayloadUUID</key>
-  	<string>DAppNode.${credentials.otp}</string>
+  	<string>dappnode.${credentials.otp}</string>
   	<key>PayloadVersion</key>
   	<integer>1</integer>
   </dict>

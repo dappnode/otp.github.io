@@ -3,15 +3,9 @@ import getJsonFromUrl from "./getJsonFromUrl";
 
 const OTP_VARIABLE_TAG = "otp";
 
-// Old url: https://dappnode.github.io/DAppNode_OTP/#otp=acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234
-// New url: https://dappnode.github.io/otp/#acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234
-// New url (admin): 104.248.150.201&PdJqRTPgxTFXkK8GseP6&&6BzcwMaqTGGsSVTgFx9F&lionDAppnode
-// s=104.192.192.192
-// s=73bf73bf73bf73bf.dyndns.dappnode.io
-// x=PdjqPdjqPdjqPdjqPdjq
-// u=dappnode_admin
-// p=6Bzc6Bzc6Bzc6Bzc6Bzc
-// n=lionDAppnode
+// Parses orl url:
+//
+// https://dappnode.github.io/DAppNode_OTP/#otp=acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234acbdeacbedb12341234
 
 export default function() {
   const urlVariables = getJsonFromUrl(true);
