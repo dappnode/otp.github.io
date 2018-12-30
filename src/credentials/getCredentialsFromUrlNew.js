@@ -64,7 +64,11 @@ export default function() {
   };
 
   // Append extra credentials
-  credentials.otp = query;
+  // the otp is only used in the apple profile to signal uniqueness
+  // It should generate some random data that's the same for equal profiles
+  credentials.otp = encodeURIComponent(
+    [credentials.psk, credentials.pass].join("")
+  );
 
   // Return the valid credentials object
   return credentials;
