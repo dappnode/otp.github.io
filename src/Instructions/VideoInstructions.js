@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 const youtubeLink = {
   'Windows 7, Vista and XP': "https://www.youtube.com/embed/wGWrXofjIyo",
-  'Windows 10 and 8.x': "https://www.youtube.com/embed/kq1NFCbR1wI"
+  'Windows 10 and 8.x': "https://www.youtube.com/embed/kq1NFCbR1wI",
+  'Chromebook': "https://www.youtube.com/watch?v=JNzDIMoaMSc"
 };
 
 export default class VideoInstructions extends Component {

@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import Credential from "./Credential";
+import VideoInstructions from "./VideoInstructions";
 
 export default class Chromebook extends Component {
   render() {
     // <Credential tag={'server'}/>
     return (
       <div>
+        <VideoInstructions platform={"Windows 7, Vista and XP"} />
+
         <h4>Chromebook setup guide</h4>
         <hr className="my-4" />
         <ol className="ListInstructions">
