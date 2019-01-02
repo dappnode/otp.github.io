@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import Credential from "./Credential";
+import VideoInstructions from "./VideoInstructions";
 
 export default class Android extends Component {
   render() {
     // <Credential tag={'server'}/>
     return (
       <div>
+        <VideoInstructions platform={"Android"} />
+
         <h4>Android setup guide</h4>
         <hr className="my-4" />
         <ol className="ListInstructions">
