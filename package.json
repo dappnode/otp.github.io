@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "gzip": "gzip -r -k build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
